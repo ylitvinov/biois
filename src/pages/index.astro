@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="BIOIS — Инструкции по применению">
+  <section class="page-hero">
+    <h1>Инструкции по применению</h1>
+    <p>Подробные руководства по использованию наших продуктов</p>
+  </section>
+
+  <section class="cards-grid">
+    <a href="/instructions/ladybugs" class="card">
+      <div class="card-icon">🐞</div>
+      <h2 class="card-title">Божьи коровки</h2>
+      <p class="card-desc">Инструкция по применению божьих коровок для борьбы с вредителями</p>
+      <span class="card-btn">Читать инструкцию</span>
+    </a>
+
+    <a href="/instructions/nematodes" class="card">
+      <div class="card-icon">🪱</div>
+      <h2 class="card-title">Нематоды</h2>
+      <p class="card-desc">Инструкция по применению нематоды для защиты растений</p>
+      <span class="card-btn">Читать инструкцию</span>
+    </a>
+
+    <a href="/instructions/sachet-mites" class="card">
+      <div class="card-icon">🔬</div>
+      <h2 class="card-title">Саше с хищными клещами</h2>
+      <p class="card-desc">Пошаговая инструкция по применению саше-пакетов с энтомофагами</p>
+      <span class="card-btn">Читать инструкцию</span>
+    </a>
+
+    <a href="/instructions/biocontrol-mites" class="card">
+      <div class="card-icon">🕷️</div>
+      <h2 class="card-title">Прочие агенты биологической борьбы</h2>
+      <p class="card-desc">Инструкция по применению клещей-энтомофагов в колбах и банках</p>
+      <span class="card-btn">Читать инструкцию</span>
+    </a>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .page-hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #172442;
+    margin-bottom: 12px;
+  }
+
+  .page-hero p {
+    font-size: 18px;
+    color: #666;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    padding: 32px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .card-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #172442;
+    margin-bottom: 12px;
+  }
+
+  .card-desc {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 24px;
+    flex: 1;
+  }
+
+  .card-btn {
+    display: inline-block;
+    background: #a3cf1d;
+    color: #172442;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    transition: background 0.2s;
+    align-self: flex-start;
+  }
+
+  .card:hover .card-btn {
+    background: #abc439;
+  }
+
+  @media (max-width: 480px) {
+    .page-hero h1 {
+      font-size: 26px;
+    }
+
+    .cards-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .card {
+      padding: 24px;
+    }
+  }
+</style>

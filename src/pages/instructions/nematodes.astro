@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Инструкция по применению Нематоды — BIOIS">
+  <article class="instruction">
+    <a href="/" class="back-link">&larr; Все инструкции</a>
+
+    <h1>Инструкция по применению Нематоды</h1>
+
+    <section class="section">
+      <h2>Общие требования</h2>
+      <p>В системе снимаются все возможные фильтры, чтобы минимизировать травматизм нематоды в момент передвижения.</p>
+      <ul>
+        <li>Давление 5-10 атмосфер (не выше).</li>
+        <li>Прилипатели не добавлять, можно только сульфат магния 150 грамм/100 л.</li>
+        <li>Постоянно мешать раствор, чтобы нематода не оседала.</li>
+        <li>Использовать распылительные насадки с диаметром 0,5 мм (500 микрон) и более, чем больше отверстие, тем лучше.</li>
+        <li>Лучше всего вносить нематоду через обычную лейку.</li>
+      </ul>
+    </section>
+
+    <section class="section danger">
+      <h2>Строго обязательно!</h2>
+      <p>В микроскоп всегда нужно смотреть разбавленные в воде нематоды, чтобы были живые, шевелились.</p>
+    </section>
+
+    <section class="section">
+      <h2>Внесение нематоды в почву</h2>
+      <ul>
+        <li>За несколько часов до внесения хорошо намочить почву.</li>
+        <li>Распределить раствор с нематодами равномерно по поверхности, избегая появления потеков.</li>
+        <li>Дозировка для внесения: <strong>0,5 миллиона нематод/м²</strong>.</li>
+        <li>Количество жидкости для обработки зависит от способа внесения и типа почвы.</li>
+        <li>В течение двух недель после применения необходимо поддерживать площадь влажной.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Влажные обработки нематодой по растениям</h2>
+      <ul>
+        <li>Дозировка нематод от <strong>0,25 до 1 миллиона на/1м²</strong> (зависит от индекса листовой поверхности и количества вредителей на листьях).</li>
+        <li>Не использовать прилипатели на основе масел, лучше использовать фруктозу 2 кг/1 Га или магний сульфат 0,05.</li>
+        <li>На гектар использовать от 1250 до 2000 литров.</li>
+        <li>Обработки повторять каждую неделю, до момента решения проблемы, можно делать баковые смеси с фунгицидами.</li>
+      </ul>
+    </section>
+
+    <section class="section warning">
+      <h2>Лучшие условия для работы нематоды</h2>
+      <ul>
+        <li>Влажная почва или субстрат.</li>
+        <li>Температура почвы в диапазоне <strong>10°C и 30°C</strong>.</li>
+        <li>Нематоды погибают от ультрафиолетовых лучей и высыхания.</li>
+        <li>Влажные обработки по листу необходимо делать в вечернее время, чтобы растения как можно дольше были мокрыми, а количество УФ-света было минимальным.</li>
+      </ul>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .instruction {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    display: inline-block;
+    color: #a3cf1d;
+    font-weight: 500;
+    margin-bottom: 24px;
+    font-size: 15px;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: #abc439;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #172442;
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+
+  .section {
+    margin-bottom: 32px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #172442;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #a3cf1d;
+  }
+
+  .section p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .section ul,
+  .section ol {
+    padding-left: 24px;
+    margin-top: 8px;
+  }
+
+  .section ul li,
+  .section ol li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .warning {
+    background: #fffde6;
+    border: 1px solid #f0e68c;
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .warning h2 {
+    color: #b8860b;
+    border-bottom-color: #f0e68c;
+  }
+
+  .danger {
+    background: #fff5f5;
+    border: 1px solid #f5c6c6;
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .danger h2 {
+    color: #c0392b;
+    border-bottom-color: #f5c6c6;
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 24px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+    }
+
+    .warning,
+    .danger {
+      padding: 16px;
+    }
+  }
+</style>
