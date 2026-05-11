@@ -8,6 +8,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <h1>Инструкция по внесению хищных клещей Amblyseius</h1>
 
+    <img src="/images/amblyseius.png" alt="Хищный клещ Amblyseius под микроскопом" class="hero-image" />
+
     <section class="section">
       <h2>1. О продукте</h2>
       <p>Хищные клещи — очень маленькие существа. Поставляются в субстрате из отрубей, который вносится на листья растений обычной столовой ложкой.</p>
@@ -106,6 +108,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .instruction {
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 32px;
   }
 
   .back-link {
