@@ -22,6 +22,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p class="card-desc">Инструкция по применению хищного клеща против паутинного клеща</p>
       <span class="card-btn">Читать инструкцию</span>
     </a>
+
+    <a href="/instructions/pheromone-traps" class="card">
+      <div class="card-icon card-icon-emoji">🪤</div>
+      <h2 class="card-title">Феромонные ловушки</h2>
+      <p class="card-desc">Инструкции по применению феромонных ловушек и клеевых цветоловушек</p>
+      <span class="card-btn">Читать инструкцию</span>
+    </a>
   </section>
 </BaseLayout>
 
@@ -68,6 +75,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   .card-icon {
     margin-bottom: 16px;
+  }
+
+  .card-icon-emoji {
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    background: #f8f9fa;
+    border-radius: 10px;
   }
 
   .card-icon img {
