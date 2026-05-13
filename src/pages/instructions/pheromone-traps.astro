@@ -314,6 +314,31 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <li>Прикрепите подвес к верхней части корпуса ловушки.</li>
         <li>Повесьте ловушку на дерево или деревянный столб, прижмите и привяжите 1 или 2 трапа к стволу дерева или столбу.</li>
       </ol>
+
+      <h3>Важные нюансы при использовании</h3>
+      <ul class="tips">
+        <li>Ловушки должны быть плотно прижаты к дереву, кусту и т. д., чтобы по зелёным трапам клоп мог ползти и попадать в ловушку.</li>
+        <li>Феромон должен быть размещён в прозрачной колбе.</li>
+        <li>Срок действия открытого феромона в ловушке — около 5 недель, иногда больше.</li>
+        <li>Запасные феромоны храните в холодильнике до востребования. Срок хранения в холодильнике или морозилке — до 1 года (в закрытой упаковке).</li>
+        <li>После истечения срока одного феромона просто добавьте второй — так эффект будет сильнее.</li>
+      </ul>
+
+      <h3>Фото ловушки в работе</h3>
+      <div class="photo-gallery">
+        <figure>
+          <img src="/images/marble-bug-trap/raspberry-bush.jpg" alt="Ловушка для мраморного клопа, подвешенная в кустах малины" loading="lazy" />
+          <figcaption>Ловушка размещена в кустах малины.</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/marble-bug-trap/in-tree.jpg" alt="Ловушка для мраморного клопа с уловом на дереве" loading="lazy" />
+          <figcaption>Ловушка с уловом, подвешенная на дереве.</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/marble-bug-trap/closeup-with-bugs.jpg" alt="Крупный план ловушки с попавшими внутрь мраморными клопами" loading="lazy" />
+          <figcaption>Крупный план: пойманные мраморные клопы внутри корпуса.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- 14. Акациевая огневка -->
@@ -661,6 +686,53 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     padding: 10px 16px;
     font-weight: 500;
     color: #b8860b;
+  }
+
+  .tips {
+    background: #f3f8e6;
+    border-left: 4px solid #a3cf1d;
+    border-radius: 6px;
+    padding: 12px 16px 12px 36px;
+    margin-top: 8px;
+  }
+
+  .tips li {
+    margin-bottom: 8px;
+  }
+
+  .tips li:last-child {
+    margin-bottom: 0;
+  }
+
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+  .photo-gallery figure {
+    margin: 0;
+    background: #f8f9fa;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .photo-gallery figcaption {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+    padding: 10px 12px;
   }
 
   @media (max-width: 640px) {
